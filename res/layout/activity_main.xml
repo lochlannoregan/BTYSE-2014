@@ -1,0 +1,612 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0E0E6"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/enter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="@string/main_input"
+        android:maxLength="2000"
+        android:textColor="#FFFFFF" >
+        
+    </EditText>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/enter" >
+
+    <LinearLayout android:id="@+id/GlobalLayout" 
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <!-- Row 1 with single column -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/the"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/the"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/be"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/be"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/to"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/to"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <!-- Row 2 with 3 columns -->
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/of"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/of"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/and"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/and"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/a"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/a"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <!-- Row 3 with 2 columns -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/in"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/in"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/that"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/that"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/have"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/have"
+                android:textColor="#000000" />
+        </TableRow>
+        
+                <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/I"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/I"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/it"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/it"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/but"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/but"
+                android:textColor="#000000" />
+        </TableRow>
+                <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/not"
+                android:layout_weight="1"
+               android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/not"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/on"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/on"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/with"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/with"
+                android:textColor="#000000" />
+        </TableRow>
+                <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/he"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/he"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/as"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/as"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/you"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/you"
+                android:textColor="#000000" />
+            
+            
+        </TableRow>
+        
+                                <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/his"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/his"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/at"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/at"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/by"
+                android:layout_weight="1"
+               android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/by"
+                android:textColor="#000000" />
+            </TableRow>
+            
+                                <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/from"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/from"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/they"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/they"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/we"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/we"
+                android:textColor="#000000" />
+            </TableRow>
+            
+                                <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/say"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/say"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/her"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/her"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/she"
+                android:layout_weight="1"
+               android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/she"
+                android:textColor="#000000" />
+            </TableRow>
+            
+                                <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/or"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/or"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/an"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/an"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/will"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/will"
+                android:textColor="#000000" />
+            </TableRow>
+            
+                                <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/my"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/my"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/one"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/one"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/all"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/all"
+                android:textColor="#000000" />
+            </TableRow>
+            
+                                <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/would"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/would"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/there"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/there"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/their"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/their"
+                android:textColor="#000000" />
+            </TableRow>
+            
+                                <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/what"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/what"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/so"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/so"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/up"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/up"
+                android:textColor="#000000" />
+            </TableRow>
+            
+                                <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/out"
+                android:layout_weight="1"
+               android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/out"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/time"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/time"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/about"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/about"
+                android:textColor="#000000" />
+            </TableRow>
+            
+                                <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/who"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/who"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/get"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/get"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/which"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/which"
+                android:textColor="#000000" />
+            </TableRow>
+            
+                                <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/go"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/go"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/me"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/me"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/when"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/when"
+                android:textColor="#000000" />
+            </TableRow>
+            
+                                <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/make"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/make"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/can"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/can"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/like"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/like"
+                android:textColor="#000000" />
+            </TableRow>
+    </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

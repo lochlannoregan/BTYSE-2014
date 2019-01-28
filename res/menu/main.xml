@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item 
+        android:id="@+id/menu_settings"
+        android:title="@string/menu_about"
+        android:orderInCategory="100"
+        android:showAsAction="always" 
+        android:icon="@drawable/menu"/>
+    
+    <item 
+        android:id="@+id/menu_clear"
+        android:title="@string/clear"
+        android:showAsAction="always" 
+        android:icon="@drawable/delete"/>
+    
+    <item 
+        android:id="@+id/menu_speak"
+        android:title="@string/speak"
+        android:showAsAction="always" 
+        android:icon="@drawable/speak"/>
+ </menu>
